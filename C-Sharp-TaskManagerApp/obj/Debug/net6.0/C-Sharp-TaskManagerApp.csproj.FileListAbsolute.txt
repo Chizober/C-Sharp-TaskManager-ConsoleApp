@@ -1,0 +1,15 @@
+C:\Users\Kaiser\Desktop\C-Sharp-TaskManagerApp\obj\Debug\net6.0\C-Sharp-TaskManagerApp.csproj.AssemblyReference.cache
+C:\Users\Kaiser\Desktop\C-Sharp-TaskManagerApp\obj\Debug\net6.0\C-Sharp-TaskManagerApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kaiser\Desktop\C-Sharp-TaskManagerApp\obj\Debug\net6.0\C-Sharp-TaskManagerApp.AssemblyInfoInputs.cache
+C:\Users\Kaiser\Desktop\C-Sharp-TaskManagerApp\obj\Debug\net6.0\C-Sharp-TaskManagerApp.AssemblyInfo.cs
+C:\Users\Kaiser\Desktop\C-Sharp-TaskManagerApp\obj\Debug\net6.0\C-Sharp-TaskManagerApp.csproj.CoreCompileInputs.cache
+C:\Users\Kaiser\Desktop\C-Sharp-TaskManagerApp\bin\Debug\net6.0\C-Sharp-TaskManagerApp.exe
+C:\Users\Kaiser\Desktop\C-Sharp-TaskManagerApp\bin\Debug\net6.0\C-Sharp-TaskManagerApp.deps.json
+C:\Users\Kaiser\Desktop\C-Sharp-TaskManagerApp\bin\Debug\net6.0\C-Sharp-TaskManagerApp.runtimeconfig.json
+C:\Users\Kaiser\Desktop\C-Sharp-TaskManagerApp\bin\Debug\net6.0\C-Sharp-TaskManagerApp.dll
+C:\Users\Kaiser\Desktop\C-Sharp-TaskManagerApp\bin\Debug\net6.0\C-Sharp-TaskManagerApp.pdb
+C:\Users\Kaiser\Desktop\C-Sharp-TaskManagerApp\obj\Debug\net6.0\C-Sharp-TaskManagerApp.dll
+C:\Users\Kaiser\Desktop\C-Sharp-TaskManagerApp\obj\Debug\net6.0\refint\C-Sharp-TaskManagerApp.dll
+C:\Users\Kaiser\Desktop\C-Sharp-TaskManagerApp\obj\Debug\net6.0\C-Sharp-TaskManagerApp.pdb
+C:\Users\Kaiser\Desktop\C-Sharp-TaskManagerApp\obj\Debug\net6.0\C-Sharp-TaskManagerApp.genruntimeconfig.cache
+C:\Users\Kaiser\Desktop\C-Sharp-TaskManagerApp\obj\Debug\net6.0\ref\C-Sharp-TaskManagerApp.dll
