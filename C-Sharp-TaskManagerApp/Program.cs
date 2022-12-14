@@ -13,7 +13,7 @@ namespace TaskManager
             Process[] processList = Process.GetProcesses();
             foreach (Process process in processList)
             {
-             Console.WriteLine("Process: {0} | ID: {1} | Status {2} | Memory {3}mb", process.ProcessName, process.Id, process.Responding, process.PrivateMemorySize64/1024/1024);
+             Console.WriteLine("Process: {0}  --- ID: {1}  --- Status: {2}  --- Memory: {3}mb", process.ProcessName, process.Id, process.Responding, process.PrivateMemorySize64/1024/1024);
              processCount += 1;
             }
             Console.WriteLine("Number of Total Processes: {0} ", processCount);
@@ -53,8 +53,7 @@ namespace TaskManager
                 if(File.Exists(processPath))
                 {
                 Process.Start(processPath);
-                Console.WriteLine($"{ processPath} is started. ");
-                Console.Write("\n\n\n");
+                Console.WriteLine($"{processPath} is started. \n\n");
                 break;
                 }
                 else{
@@ -100,8 +99,7 @@ namespace TaskManager
                 Console.WriteLine("invalid input,please try again");
                 }
                 Process.GetProcessById(processID).Kill();
-                Console.WriteLine("Process '{0}' died.", processID);
-                Console.Write("\n\n\n");
+                Console.WriteLine($"Process {processID} got killed \n\n");
                 goto begin;
             }
             
