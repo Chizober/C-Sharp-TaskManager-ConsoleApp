@@ -18,6 +18,14 @@ namespace TaskManager
             }
             Console.WriteLine("Number of Total Processes: {0} ", processCount);
         }
+         public static void MyThread()
+            {
+                for (int i = 0; i < 5; i++)
+                {
+                    Console.WriteLine("i m a thread : {0}", i);
+                    Thread.Sleep(500);
+                }
+            }
         static void Main(string[] args)
         {
 
@@ -29,18 +37,20 @@ namespace TaskManager
             "\t\t 1. Start Process\n"+
             "\t\t 2. View Process\n"+
             "\t\t 3. Create Process\n"+
-            "\t\t 4. Terminate Process\n" +
-            "\t\t 5. Check if Thread IsAlive or IsBackground\n" + 
-            "\t\t 6. Press 6 to Exit \n"  
+            "\t\t 4. Create Thread\n"+
+            "\t\t 5. Terminate Process\n" +
+            "\t\t 6. Check if Thread IsAlive or IsBackground\n" + 
+            "\t\t 7. Press 6 to Exit \n"  
              );
             Console.Write("Pick One Option:");
             input = Console.ReadLine();
             if (input == "1") goto Start;
             if (input == "2") goto View;
-            if (input == "3") goto Create;
-            if (input == "4") goto Terminate;
-            if (input == "5") goto ThreadStatus;
-            if (input == "6") System.Environment.Exit(1);
+            if (input == "3") goto CreateProcess;
+            if (input == "4") goto CreateThread;
+            if (input == "5") goto Terminate;
+            if (input == "6") goto ThreadStatus;
+            if (input == "7") System.Environment.Exit(1);
             Console.WriteLine("Invalid option!");
             goto begin;
             Start:
@@ -67,7 +77,7 @@ namespace TaskManager
                ShowAllProcesses();
                     goto begin;
             }
-            Create:
+            CreateProcess:
             { 
                  string  newPath;
                  string  arg ="";
@@ -87,7 +97,13 @@ namespace TaskManager
                 }
                  
                 }
-                    goto begin;
+                 goto begin;
+            }
+            CreateThread:
+            { 
+            Thread thread = new Thread(new ThreadStart(MyThread)); 
+            thread.Start();
+             goto begin;
             }
     
             Terminate:
@@ -122,17 +138,14 @@ namespace TaskManager
                 if (input == "B") goto B;
                 A:
                 {
-                Thread thread = Thread.CurrentThread;
-                thread.Name ="My Current Thread";
-                Console.WriteLine("Checks if the thread isAlive , status is = {0}", thread.IsAlive);
+                Thread t = new Thread(new ThreadStart(MyThread)); 
+                Console.WriteLine("Checks if the thread isBakground , status is = {0}", t.IsAlive);
                 goto begin;
                 }
                  B:
-                {
-                  
-                Thread thread = Thread.CurrentThread;
-                thread.Name ="My Current Thread";
-                Console.WriteLine("Checks if the thread isBakground , status is = {0}", thread.IsBackground);
+                { 
+                Thread t = new Thread(new ThreadStart(MyThread)); 
+                Console.WriteLine("Checks if the thread isBakground , status is = {0}", t.IsBackground);
                 goto begin;
                 }
                
