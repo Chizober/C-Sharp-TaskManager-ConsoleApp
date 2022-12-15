@@ -138,14 +138,15 @@ namespace TaskManager
                 if (input == "B") goto B;
                 A:
                 {
-                Thread t = new Thread(new ThreadStart(MyThread)); 
-                Console.WriteLine("Checks if the thread isBakground , status is = {0}", t.IsAlive);
+                Thread t = new Thread(new ThreadStart(MyThread));
+                t.IsAlive = true; 
+                Console.WriteLine("Checks if MyThread method isAlive , status is = {0}", t.IsAlive);
                 goto begin;
                 }
                  B:
                 { 
                 Thread t = new Thread(new ThreadStart(MyThread)); 
-                Console.WriteLine("Checks if the thread isBakground , status is = {0}", t.IsBackground);
+                Console.WriteLine("Checks if  MyThread method isBakground , status is = {0}", t.IsBackground);
                 goto begin;
                 }
                
