@@ -103,6 +103,12 @@ namespace TaskManager
             { 
             Thread thread = new Thread(new ThreadStart(MyThread)); 
             thread.Start();
+             for (int i= 0; i< 5; i++)
+            {
+               Console.WriteLine("Main thread is doing its work\n");
+               Thread.Sleep(0);
+            }
+            thread.Join();
              goto begin;
             }
     
@@ -139,7 +145,6 @@ namespace TaskManager
                 A:
                 {
                 Thread t = new Thread(new ThreadStart(MyThread));
-                t.IsAlive = true; 
                 Console.WriteLine("Checks if MyThread method isAlive , status is = {0}", t.IsAlive);
                 goto begin;
                 }
